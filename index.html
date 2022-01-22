@@ -895,19 +895,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 									"At Supervision Team, he has experienced in supervising the work, doing some management work, controlling cost and time, and making insight and progress data analysis or report. For more info about his experiences, please see the Resume Section",
 									"He is interested in management aspect too, especially in strategy management and product management",
 									"He is experienced in doing some strategy management and product management when he working as data and business analyst",
-									"He learns much about social data science, implementation of NLP in real-life, how to work with colleagues which has different time-zone, how to communicate well in English, as well as other soft-skills, during his tenure at The World Bank.",
-									"During his tenure at The World Bank, he learns much about social data science, implementation of NLP in real-life, how to work with colleagues which has different time-zone, how to communicate well in English, as well as other soft-skills.",
-									"At The World Bank, he worked on a big project which is related to NLP. The project is about topic discussion monitoring from social media and news media regarding COVID-19. He is responsible for creating and maintaining the pipeline from scratch until reporting phase. This project will be released to public soon :)",
-									"He joined The World Bank as a Data Science Consultant from Apr 2020.",
-									"He is doing one big project at The World Bank. He worked on a big project which is related to NLP. The project is about topic discussion monitoring from social media and news media regarding COVID-19. He is responsible for creating and maintaining the pipeline from scratch until reporting phase. This project will be released to public soon :)",
-									"Goal of the Project: to monitor the discussion within Indonesian people about COVID19 from the passive monitoring side.",
-									"Aim of the Project: to monitor the discussion within Indonesian people about COVID19 from the passive monitoring side.",
-									"Project Goal: to monitor the discussion within Indonesian people about COVID19 from the passive monitoring side.",
-									"He started working at The World Bank as a Data Science Consultant from Apr 2020.",
-									"His story about his application process in The World Bank: someone who worked at The World Bank shared an opening for Data Scientist role through one of his organization group. So, he applied by sending his CV to the attached email and then he got interviewed with the users. Long story short, thanks to God,  he is hired as a Data Science Consultant.",
-									"His story about his interview process in The World Bank: someone who worked at The World Bank shared an opening for Data Scientist role through one of his organization group. So, he applied by sending his CV to the attached email and then he got interviewed with the users. Long story short, thanks to God,  he is hired as a Data Science Consultant.",
-									"There are 6 team members (including him) and 1 lead at his team. He is working with the other 2 data scientists from MIT and Oxford, along with 3 other research analysts from Indonesia.",
-									"His work at The World Bank is about topic discussion monitoring from social media and news media regarding COVID-19. He is responsible for creating and maintaining the pipeline from scratch until reporting phase. This project will be released to public soon :)",
 									"He has used ETABS when he has finished bachelor structural engineering research about base isolation inovation in civil engineering. He does love to learn new apps",
 									"His structural engineering research base isolation type is High Damping Rubber Bearing inovation in civil engineering",
 									"As Civil Supervisor Team, He experience a few responsibility : Stakeholder collaboration to help and solve problem. Supervised the work. Drawing As Built Drawing. Cost and schedule control. Reported daily, weekly, monthly report. Built an insight progess data.",
@@ -978,10 +965,10 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				const process_data = async () => {
 					var data_query = query.value.toLowerCase();
 
-					data_query = data_query.replace(" analysis","")
-					data_query = data_query.replace(" scientist","")
-					data_query = data_query.replace(" analytics","")
-					data_query = data_query.replace(" predict","")
+					data_query = data_query.replace("analysis","")
+					data_query = data_query.replace("scien","")
+					data_query = data_query.replace("analytics","")
+					data_query = data_query.replace("predict","")
 
 					const model = await modelUSE;
 					const input = {
@@ -1068,10 +1055,10 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				const process_experience = async () => {
 					var experience_query = query.value.toLowerCase();
 
-					experience_query = experience_query.replace(" experience","")
-					experience_query = experience_query.replace(" exp","")
-					experience_query = experience_query.replace(" experiencing","")
-					experience_query = experience_query.replace(" work experience","")
+					experience_query = experience_query.replace("experience","")
+					experience_query = experience_query.replace("exp","")
+					experience_query = experience_query.replace("experiencing","")
+					experience_query = experience_query.replace("work experience","")
 
 					const model = await modelUSE;
 					const input = {
@@ -1151,9 +1138,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				const process_business = async () => {
 					var business_query = query.value.toLowerCase();
 
-					business_query = business_query.replace(" business","")
-					business_query = business_query.replace(" bisnis","")
-					business_query = business_query.replace(" bsnis","")
+					business_query = business_query.replace("business","")
+					business_query = business_query.replace("bisnis","")
+					business_query = business_query.replace("bsnis","")
 
 					const model = await modelUSE;
 					const input = {
@@ -1218,9 +1205,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				const process_management = async () => {
 					var management_query = query.value.toLowerCase();
 
-					management_query = management_query.replace(" manage","")
-					management_query = management_query.replace(" managing","")
-					management_query = management_query.replace(" strategy","")
+					management_query = management_query.replace("manage","")
+					management_query = management_query.replace("managing","")
+					management_query = management_query.replace("strategy","")
 
 					const model = await modelUSE;
 					const input = {
@@ -1279,8 +1266,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				const process_civil = async () => {
 					var civil_query = query.value.toLowerCase();
 
-					civil_query = civil_query.replace(" civil","")
-					civil_query = civil_query.replace(" cvil","")
+					civil_query = civil_query.replace("civil","")
+					civil_query = civil_query.replace("cvil","")
 
 					const model = await modelUSE;
 					const input = {
@@ -1343,8 +1330,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				const process_apps = async () => {
 					var apps_query = query.value.toLowerCase();
 
-					apps_query = apps_query.replace(" apps","")
-					apps_query = apps_query.replace(" programm","")
+					apps_query = apps_query.replace("app","")
+					apps_query = apps_query.replace("programm","")
 					
 					const model = await modelUSE;
 					const input = {
@@ -1478,7 +1465,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 								output_timeout = setTimeout(function(){ 
 									answerDiv.innerHTML = "";
 								}, chosen_response.length*55);
-							} else if (query.value.toLowerCase().includes("skill") || query.value.toLowerCase().includes("strenght")) {
+							} else if (query.value.toLowerCase().includes("his skill") || query.value.toLowerCase().includes("strenght")) {
 								if (i == 0){
 									// Hide output 
 									answerDiv.style.display = 'none';
@@ -1520,17 +1507,17 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 								// Currently only supports Web version for AI personal assistant, because of the precision issue (16 vs 32 bit) using WebGL backend and CPU backend is too slow. 
 								tf.setBackend('webgl');
-								if (query.value.toLowerCase().includes(" analysis") || query.value.toLowerCase().includes(" scientist") || query.value.toLowerCase().includes(" analytics") || query.value.toLowerCase().includes(" predict")) {
+								if (query.value.toLowerCase().includes("analysis") || query.value.toLowerCase().includes("scien") || query.value.toLowerCase().includes("analytics") || query.value.toLowerCase().includes("predict")) {
 									process_data();
-								} else if (query.value.toLowerCase().includes(" experience") || query.value.toLowerCase().includes(" exp") || query.value.toLowerCase().includes(" experiencing") || query.value.toLowerCase().includes(" work experience")){
+								} else if (query.value.toLowerCase().includes("experience") || query.value.toLowerCase().includes("exp") || query.value.toLowerCase().includes("experiencing") || query.value.toLowerCase().includes("work experience")){
 									process_experience();
-								} else if (query.value.toLowerCase().includes(" business") || query.value.toLowerCase().includes(" bisnis") || query.value.toLowerCase().includes(" bsnis")){
+								} else if (query.value.toLowerCase().includes("business") || query.value.toLowerCase().includes("bisnis") || query.value.toLowerCase().includes("bsnis")){
 									process_business();
-								} else if (query.value.toLowerCase().includes(" manage") || query.value.toLowerCase().includes(" managing") || query.value.toLowerCase().includes(" strategy")){
+								} else if (query.value.toLowerCase().includes("manage") || query.value.toLowerCase().includes("managing") || query.value.toLowerCase().includes("strategy")){
 									process_management();
-								} else if (query.value.toLowerCase().includes(" civil") || (query.value.toLowerCase().includes(" cvil"))) {
+								} else if (query.value.toLowerCase().includes("civil") || (query.value.toLowerCase().includes("cvil"))) {
 									process_civil();
-								} else if (query.value.toLowerCase().includes(" apps") || (query.value.toLowerCase().includes(" programm"))) {
+								} else if (query.value.toLowerCase().includes("app") || (query.value.toLowerCase().includes("programm"))) {
 									process_apps();
 								}else {
 									process_general();
