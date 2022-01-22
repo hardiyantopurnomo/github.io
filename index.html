@@ -978,10 +978,10 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				const process_data = async () => {
 					var data_query = query.value.toLowerCase();
 
-					data_query = data_query.replace(" data analysis","")
-					data_query = data_query.replace(" data scientist","")
-					data_query = data_query.replace(" data analytics","")
-					data_query = data_query.replace(" data predict","")
+					data_query = data_query.replace(" analysis","")
+					data_query = data_query.replace(" scientist","")
+					data_query = data_query.replace(" analytics","")
+					data_query = data_query.replace(" predict","")
 
 					const model = await modelUSE;
 					const input = {
@@ -1533,7 +1533,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 								// Currently only supports Web version for AI personal assistant, because of the precision issue (16 vs 32 bit) using WebGL backend and CPU backend is too slow. 
 								tf.setBackend('webgl');
-								if (query.value.toLowerCase().includes(" data analysis") || query.value.toLowerCase().includes(" data scientist") || query.value.toLowerCase().includes(" data analytics") || query.value.toLowerCase().includes(" data predict")) {
+								if (query.value.toLowerCase().includes(" analysis") || query.value.toLowerCase().includes(" scientist") || query.value.toLowerCase().includes(" analytics") || query.value.toLowerCase().includes(" predict")) {
 									process_data();
 								} else if (query.value.toLowerCase().includes(" experience") || query.value.toLowerCase().includes(" exp") || query.value.toLowerCase().includes(" experiencing") || query.value.toLowerCase().includes(" work experience")){
 									process_experience();
