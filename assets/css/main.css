@@ -1743,7 +1743,7 @@ input, select, textarea {
 #first_assistant_desc {display: flex;
 				flex-direction: column;
 				top: 15px;
-				width: 60vw;
+				width: 100vw;
 				justify-content: center;
 				align-items: center;
 				text-align: center;}
