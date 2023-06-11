@@ -1731,7 +1731,10 @@ input, select, textarea {
 		position: relative;
 		top: 15px;
 		width: 60vw;
-		height: 35px;}
+		height: 35px;
+		align-items: center;
+		justify-content: center;
+		text-align: center;}
 
 
 #output {display: none;
