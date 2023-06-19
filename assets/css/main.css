@@ -1747,9 +1747,9 @@ input, select, textarea {
 				flex-direction: column;
 				top: 15px;
 				width: 100%;
-				justify-content: center;
-				align-items: center;
-				text-align: center;}
+				justify-content: normal;
+				align-items: normal;
+				text-align: normal;}
 
 
 #say_hi {display: block;}
