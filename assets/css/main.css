@@ -1746,7 +1746,7 @@ input, select, textarea {
 #first_assistant_desc {display: flex;
 				flex-direction: column;
 				top: 15px;
-				width: 120vw;
+				width: 100%;
 				justify-content: center;
 				align-items: center;
 				text-align: center;}
